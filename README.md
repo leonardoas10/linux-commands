@@ -1,56 +1,56 @@
-##### Para saber los procesos ejecutados
+### Para saber los procesos ejecutados
 
 `ps auxf`
 
-##### Se puede ordenar con el 'sort' y pasarle la posicion con el flag -k (es la columna)
+### Se puede ordenar con el 'sort' y pasarle la posicion con el flag -k (es la columna)
 
 `ps auxf | sort -k 4`
 
-##### En lista todo los paquetes instalados
+### En lista todo los paquetes instalados
 
 `dpkg -l`
 
-##### Crear un usuario
+### Crear un usuario
 
 `sudo adduser <nombre usuario>`
 
-##### Eliminar usuario
+### Eliminar usuario
 
 `sudo userdel <nombre usuario>`
 
-##### Agregar usuario al grupo sudo
+### Agregar usuario al grupo sudo
 
 `sudo gpasswd -a <nombre usuario>`
 
-##### Eliminar usuario de grupo sudo
+### Eliminar usuario de grupo sudo
 
 `sudo gpasswd -d <nombre usuario> sudo`
 
-##### Cambiar de usuario
+### Cambiar de usuario
 
 `su - <nombre usuario>`
 
-##### Muestra que grupo pertenece un usuario
+### Muestra que grupo pertenece un usuario
 
 `groups <nombre de usuario>`
 
-##### Agrega un usuario a un grupo
+### Agrega un usuario a un grupo
 
 `usermod -aG <grupo> <nombre usuario>`
 
-##### Estatus de un servicio / sistema
+### Estatus de un servicio / sistema
 
 `sudo systemctl status <nombre servicio>`
 
-##### Listar servicios utilizados por SO
+### Listar servicios utilizados por SO
 
 `sudo systemctl list-units -t service --all`
 
-##### Logs de un servicios
+### Logs de un servicios
 
 `sudo journalctl -fu /var/log/<nombre servicio>`
 
-#### Espacio en disco de archivos en uso
+### Espacio en disco de archivos en uso
 
 `sudo journalctl --disk-usage`
 
